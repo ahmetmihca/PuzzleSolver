@@ -3,7 +3,8 @@ def getInput(a):
     return input("Please enter the puzzle: ").lower()  
   if a == "words":
     return input("Please enter the words: ").lower()  
-def checkInput(a):
+
+  def checkInput(a):
   while True:
     if a.find("-") != -1:
       b = a.split("-")            
@@ -16,10 +17,12 @@ def checkInput(a):
       check = False
     break       
   return check 
+
 def printPuzzle(a):
   b = a.split("-")
   for i in b:
     print (i.lower()) 
+    
 def findWords (puzzle,words):
   b = puzzle.split("-")
   words= words.split(",")
